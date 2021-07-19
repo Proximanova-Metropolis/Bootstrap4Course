@@ -34,9 +34,21 @@ body {
     z-index: 0;
 }
 
-.navbar-dark, .card-header {
+h2, h3 {
+    color: rebeccapurple;
+}
+
+.navbar-dark {
     background-color: #513D99;
-    color: floralwhite;
+}
+
+.card-header {
+    background-color: #D1C4E9;
+    color: black;
+}
+
+a:hover {
+    color: #9675CD;
 }
 
 .dt-header {
