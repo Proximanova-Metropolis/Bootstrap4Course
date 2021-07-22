@@ -38,8 +38,9 @@ h2, h3 {
     color: rebeccapurple;
 }
 
-.navbar-dark {
+.navbar-dark, .modal-head-color {
     background-color: #513D99;
+    color: #FFF;
 }
 
 .card-header {
