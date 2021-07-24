@@ -219,6 +219,14 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+                        <div class="btn-group" id="carouselButton">
+                            <button class="btn btn-warning btn-sm" id="carousel-pause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                            <button class="btn btn-warning btn-sm" id="carousel-play">
+                                <span class="fa fa-play"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
              </div>
@@ -251,7 +259,7 @@
                     <div class="media">
                         <div class="media-body">
                             <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.</p>
                         </div>
                         <div class="media-right">
                             <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
@@ -370,16 +378,27 @@
         </div>
     </footer>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-        <script src="js/jquery.slim.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- JS script to open tooltip in "Reserve Table" button. Not needed now as it has been replaced with a modal. -->
-        <!-- <script>
-            $(document).ready(function() {
-                $('[data-toggle="tooltip"]').tooltip();
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JS script to open tooltip in "Reserve Table" button. Not needed now as it has been replaced with a modal. -->
+    <!-- <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script> -->
+    <script>
+        $(document).ready(function() {
+            $("#mycarousel").carousel( { interval: 5000 } );
+            $("#carousel-pause").click(function() {
+                $("#mycarousel").carousel('pause');
             });
-        </script> -->
+            $("#carousel-play").click(function() {
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -73,6 +73,7 @@ a:hover {
 
 .carousel {
     background:#513D99;
+    border-radius: 5px;
 }
 
 .carousel-item {
@@ -116,6 +117,13 @@ a:hover {
 }
 .carousel-control-next {
     width: 25%;
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
 }
 
 /* .theme-agoda .PriceDisplay .RareFindBadge--extremelyRare {
