@@ -1,4 +1,5 @@
 //I use #513D99 instead of #512DA8 that is used in the lectures, and #9675CD instead of #9575CD.
+//This separate styles.scss file is for Assignment 4, which requires this particular filename.
 
 $lt-gray: #ddd;
 $background-dark: #513D99;
@@ -75,4 +76,16 @@ body {
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header {
+    background: $background-dark;
+    color: floralwhite;
+    .close {
+        color: floralwhite;
+    }
+}
+
+.modal-body {
+    background: $background-pale;
 }

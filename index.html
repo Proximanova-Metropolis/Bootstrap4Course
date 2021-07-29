@@ -32,8 +32,8 @@
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <div class="btn btn-block btn-login">
+                    <!-- <a data-toggle="modal" data-target="#loginModal"> -->
+                        <div class="btn btn-block btn-login text-white" id="loginButton">
                             <span class="fa fa-sign-in"></span> Sign in</a>
                         </div>
                 </span>
@@ -76,12 +76,12 @@
             </div>
         </div>
     </div>
-    <div id="reserveModal" class="modal fade" role="dialog">
+    <div id="reservationModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header modal-head-color">
+                <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
-                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">                    
                     <form>
@@ -161,10 +161,13 @@
                             <!-- <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"
                             title="or call us at <br><b>+852 12345678</b>" data-placement="bottom" href="#reservation"> -->
                             <!--data-html="true" enables the "title" attribute to be styled using HTML syntax.-->
-                            <a role="button" class="btn btn-block nav-link btn-warning" 
-                                data-toggle="modal" data-target="#reserveModal">
-                                Reserve Table
-                            </a>
+
+                            <!-- <a role="button" class="btn btn-block nav-link btn-warning" 
+                                data-toggle="modal" data-target="#reservationModal"> -->
+                                <a class="btn btn-block nav-link btn-warning" id="reservationButton">
+                                    Reserve Table
+                                </a>                                
+                            <!-- </a> -->
                         </div>
                     </div>
                     
@@ -204,7 +207,7 @@
                                 <h4 class="carousel-head">Meet our Culinary Specialists</h4>
                                 <h2 class="carousel-title">Alberto Somayya <span class="carousel-head">Executive Chef</span></h2>
                                 <p class="d-none d-sm-block">
-                                    Award winning three-star Michelin chef with wide International experience having worked closely with the who&rsquo;s-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                                    Award-winning three-star Michelin chef with wide International experience having worked closely with the who&rsquo;s-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
                                 </p>
                             </div>
                         </div>
@@ -272,7 +275,7 @@
                             <h2 class="mt-0">Alberto Somayya</h2>
                             <h4>Executive Chef</h4>
                             <p class="d-none d-sm-block">
-                                Award winning three-star Michelin chef with wide International experience having worked closely with the who&rsquo;s-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                                Award-winning three-star Michelin chef with wide International experience having worked closely with the who&rsquo;s-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
                             </p>
                         </div>
                     </div>
@@ -375,29 +378,7 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- JS script to open tooltip in "Reserve Table" button. Not needed now as it has been replaced with a modal. -->
-    <!-- <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script> -->
-    <script>
-        $(document).ready(function() {
-            $("#mycarousel").carousel( { interval: 5000 } );
-            $("#carouselButton").click(function() {
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                        $("#mycarousel").carousel('pause');
-                        $("#carouselButton").children("span").removeClass('fa-pause');
-                        $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-                        $("#mycarousel").carousel('cycle');
-                        $("#carouselButton").children("span").removeClass('fa-play');
-                        $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

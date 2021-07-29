@@ -1,48 +1,48 @@
-//I use #513D99 instead of #512DA8 that is used in the lectures, and #9675CD instead of #9575CD.
-
 $lt-gray: #ddd;
-$background-dark: #513D99;
-$background-light: #9675CD;
+$background-dark: #512DA8;
+$background-light: #9575CD;
 $background-pale: #D1C4E9;
 
 // Height variables
 $carousel-item-height: 300px;
 
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin: 0px auto;
+	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
 
-.row-header {
+
+.row-header{
     @include zero-margin(0px,0px);
 }
 
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
-    min-height: 400px;
+    min-height:400px;
 }
 
-.footer {
+.footer{
     background-color: $background-pale;
     @include zero-margin(20px, 0px);
 }
 
 .jumbotron {
     @include zero-margin(70px,30px);
-    background: $background-light;
-    color: floralwhite;
+    background: $background-light ;
+    color:floralwhite;
 }
 
-address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
 }
 
-body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
 }
 
 .navbar-dark {
@@ -56,8 +56,9 @@ body {
     padding: 10px;
 }
 
+
 .carousel {
-    background: $background-dark;
+    background:$background-dark;
 
     .carousel-item {
         height: $carousel-item-height;
@@ -71,8 +72,27 @@ body {
 }
 
 #carouselButton {
-    right: 0px;
+    right:0px;
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+
+
+.modal-header{
+    background: $background-dark;
+
+    .modal-title{
+        color: floralwhite;
+
+    }
+    #closeButton{
+       color: floralwhite;
+    }
+}
+
+
+.modal-body{
+    background: $background-pale;
 }

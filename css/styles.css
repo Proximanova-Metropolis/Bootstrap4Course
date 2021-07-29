@@ -38,9 +38,22 @@ h2, h3 {
     color: rebeccapurple;
 }
 
-.navbar-dark, .modal-head-color {
+.navbar-dark {
     background-color: #513D99;
     color: #FFF;
+}
+
+.modal-header {
+    background-color: #513D99;
+    color: floralwhite;
+}
+
+.close {
+    color: floralwhite;
+}
+
+.modal-body {
+    background-color: #9675CD;
 }
 
 .card-header {
@@ -68,7 +81,7 @@ a:hover {
 }
 
 .btn-login {
-    background-color: #9675CD;
+    background-color: #513D99;
 }
 
 .carousel {

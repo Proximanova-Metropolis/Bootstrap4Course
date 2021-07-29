@@ -1,0 +1,23 @@
+$background-dark: rgb(153, 0, 255);
+$background-pale:floralwhite;
+$background-body: rgb(222, 177, 245);
+.resHeader,
+.logHeader {
+    background-color: $background-dark;
+    color: $background-pale;
+}
+
+#closeRes,
+#close {
+    color: $background-pale;
+}
+
+.resBody,
+.logBody {
+    background-color: $background-body;
+}
+
+.buttonRes,
+.logButton {
+    color: $background-pale;
+}
