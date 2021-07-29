@@ -1,0 +1,146 @@
+.row-header {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: #9675CD;
+    color: floralwhite;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    padding-top: 50px;
+    z-index: 0;
+}
+
+h2, h3 {
+    color: rebeccapurple;
+}
+
+.navbar-dark {
+    background-color: #513D99;
+    color: #FFF;
+}
+
+.modal-header {
+    background-color: #513D99;
+    color: floralwhite;
+}
+
+.close {
+    color: floralwhite;
+}
+
+.modal-body {
+    background-color: #9675CD;
+}
+
+.card-header {
+    background-color: #D1C4E9;
+    color: black;
+}
+
+a:hover {
+    color: #9675CD;
+}
+
+.dt-header {
+    color: #9675CD;
+}
+
+.navbar-brand {
+    padding-right: 22px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.btn-login {
+    background-color: #513D99;
+}
+
+.carousel {
+    background:#513D99;
+    border-radius: 5px;
+}
+
+.carousel-item {
+  height: 270px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    min-height: 200px;
+}
+
+.carousel-head {
+    color: #D1C4E9;
+    font-size: 22px;
+}
+
+.carousel-title {
+    color: #F0F0F0;
+}
+
+.carousel-text {
+    text-align: left;
+}
+
+.carousel-content {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 25%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center
+}
+
+.carousel-control-prev {
+    width: 45%;
+}
+.carousel-control-next {
+    width: 25%;
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+/* .theme-agoda .PriceDisplay .RareFindBadge--extremelyRare {
+    background-image: linear-gradient(129deg,#ff6f6f -19%,#b42435 130%);
+    box-shadow: 0 2px 6px 0 rgb(180 36 36 / 40%);
+    color: #fff;
+} */

@@ -7,7 +7,7 @@ $background-light: #9675CD;
 $background-pale: #D1C4E9;
 
 // Height variables
-$carousel-item-height: 300px;
+$carousel-item-height: 270px;
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin: 0px auto;
@@ -21,7 +21,7 @@ $carousel-item-height: 300px;
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .footer {
@@ -59,15 +59,55 @@ body {
 
 .carousel {
     background: $background-dark;
+    border-radius: 5px;
 
     .carousel-item {
         height: $carousel-item-height;
         img {
             position: absolute;
-            top: 0;
-            left: 0;
-            min-height: 300px;
+            top: 35px;
+            left: 25px;
+            min-height: 200px;
         }
+    }
+
+    .carousel-head {
+        color: $background-pale;
+        font-size: 22px;
+    }
+    
+    .carousel-title {
+        color: #F0F0F0;
+    }
+    
+    .carousel-text {
+        text-align: left;
+    }
+    
+    .carousel-content {
+        position: absolute;
+        right: 15%;
+        bottom: 20px;
+        left: 25%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .carousel-control-prev {
+        width: 45%;
+    }
+    .carousel-control-next {
+        width: 25%;
+    }
+    
+    #carouselButton {
+        right: 0px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
     }
 }
 
@@ -88,4 +128,52 @@ body {
 
 .modal-body {
     background: $background-pale;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    padding-top: 50px;
+    z-index: 0;
+}
+
+h2, h3 {
+    color: rebeccapurple;
+}
+
+.navbar-dark {
+    background-color: $background-dark;
+    color: #FFF;
+}
+
+.card-header {
+    background-color: $background-pale;
+    color: black;
+}
+
+a:hover {
+    color: $background-light;
+}
+
+.dt-header {
+    color: $background-light;
+}
+
+.navbar-brand {
+    padding-right: 22px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.btn-login {
+    background-color: $background-dark;
 }
